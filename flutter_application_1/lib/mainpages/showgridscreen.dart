@@ -8,6 +8,6 @@ class ShowGridScreen extends StatefulWidget {
 class _ShowGridScreenState extends State<ShowGridScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text("4"));
+    return Container(child: Text("show grid screen"));
   }
 }

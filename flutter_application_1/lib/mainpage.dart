@@ -52,6 +52,8 @@ class _MainPageState extends State<MainPage> {
         selectedFontSize: 14,
         unselectedFontSize: 10,
         currentIndex: _selectedIndex,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         onTap: (int index) {
           setState(() {
             _selectedIndex = index;
