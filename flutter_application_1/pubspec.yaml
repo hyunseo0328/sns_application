@@ -70,6 +70,7 @@ flutter:
     - assets/image/haru8.jpg
     - assets/image/haru9.jpg
     - assets/image/haru1.jpg
+    - assets/image/bone.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
