@@ -22,16 +22,24 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(
-      alignment: Alignment.center,
-      children: [
-        Container(child: Text("loading")
-            //   child: Image.asset(
-            // 'assets/image/haru2.jpg',
-            // fit: BoxFit.cover, )
-            ),
-        CircularProgressIndicator()
-      ],
+        body: Center(
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          Container(
+            child: Image.asset('assets/image/haru2.jpg'),
+          ),
+          CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.white)),
+          SizedBox(height: 100.0),
+          Text('loading...',
+              style: TextStyle(
+                fontSize: 25.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              )),
+        ],
+      ),
     ));
   }
 }
